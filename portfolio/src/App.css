@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 56px 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.label {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #6b7280;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.lead {
+  max-width: 680px;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.contactLinks {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contactLinks a {
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+}
+
+.section {
+  padding: 48px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card,
+.workCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.card h3,
+.workCard h3 {
+  margin-top: 0;
+}
+
+.workHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.meta,
+.tech {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.tech {
+  white-space: nowrap;
+}
+
+.workDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.problem {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 16px;
+}
+
+.learningList {
+  padding-left: 20px;
+}
+
+.footer {
+  padding: 40px 0 16px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .workHeader {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .skillGrid,
+  .workDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .tech {
+    white-space: normal;
+  }
+}
